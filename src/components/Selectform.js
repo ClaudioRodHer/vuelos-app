@@ -2,7 +2,7 @@ import { createClient } from '@supabase/supabase-js';
 import React, { useEffect, useState } from 'react';
 
 const supabaseUrl = 'https://ozkrsfyljtngzakkdhxv.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im96a3JzZnlsanRuZ3pha2tkaHh2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mjg0MzM0NjAsImV4cCI6MjA0NDAwOTQ2MH0.-Z7WtE13WIUTrec2MrBqk9Etgt5JhQY2J93erZgn1Os';
+const supabaseKey = 'numerodeapisupabse';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 const SelectForm = ({ onSearch }) => {

@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { createClient } from '@supabase/supabase-js';
 
 const supabaseUrl = 'https://ozkrsfyljtngzakkdhxv.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im96a3JzZnlsanRuZ3pha2tkaHh2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mjg0MzM0NjAsImV4cCI6MjA0NDAwOTQ2MH0.-Z7WtE13WIUTrec2MrBqk9Etgt5JhQY2J93erZgn1Os';
+const supabaseKey = 'numerodeapisupabse';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 const App = () => {
@@ -50,13 +50,13 @@ const App = () => {
 
       // Llamada a la API del clima para el aeropuerto de origen
       const weatherOrigin = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${origin_latitude}&lon=${origin_longitude}&appid=577b6831c72a0303beecf178d7a1a1d4`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${origin_latitude}&lon=${origin_longitude}&appid=numerodeapi`
       ).then((res) => res.json());
       console.log('Coordenadas origen:', { origin_latitude, origin_longitude });
 
       // Llamada a la API del clima para el aeropuerto de destino
       const weatherDestination = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${destination_latitude}&lon=${destination_longitude}&appid=577b6831c72a0303beecf178d7a1a1d4`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${destination_latitude}&lon=${destination_longitude}&appid=numerodeapi`
       ).then((res) => res.json());
       console.log('Coordenadas destino:', { destination_latitude, destination_longitude });
 
