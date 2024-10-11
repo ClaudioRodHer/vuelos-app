@@ -26,7 +26,7 @@ const FlightDetails = ({flightData}) => {
         <p>Clima en {flightData.destination}: {flightData.weatherDestination}</p>
     
     </div>
-         
+          
       </div>
     );
   };
